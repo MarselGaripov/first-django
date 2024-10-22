@@ -1,7 +1,1 @@
-# First django project
-
-## Install
-
-## Run
-
-
+"# first-django" 
