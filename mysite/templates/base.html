@@ -9,16 +9,19 @@
     <title>{% block title %}My Blog{% endblock %}</title>
 </head>
 <body>
-    <header>
-        <h1>My Blog</h1>
-        <nav>
-            <a href="{% url 'home' %}">Home</a>
-            <a href="{% url 'about' %}">About</a>
-            <a href="{% url 'review_list' %}">Reviews</a>
-        </nav>
+
+    <header class="header">
+        <div class="header-content">
+            <h1 class="header-title">Мой блог</h1>
+            <a href="{% url 'home' %}" class="header-link">Главная</a>
+            <a href="{% url 'about' %}" class="header-link">О нас</a>
+            <a href="{% url 'review_list' %}" class="header-link">Отзывы</a>
+        </div>
     </header>
+
     <main>
-        {% block content %}{% endblock %}
+        {% block content %}
+        {% endblock %}
     </main>
 </body>
 </html>

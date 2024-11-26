@@ -6,5 +6,5 @@ def home(request):
 def about(request):
     return render(request, './about.html')
 
-def post_detail(request, post_id):
-    return render(request, './post_detail.html', {'post_id': post_id})
+def post_detail(request):
+    return render(request, './post_detail.html')

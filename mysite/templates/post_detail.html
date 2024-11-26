@@ -1,8 +1,13 @@
-{% extends 'blog/base.html' %}
+{% extends 'base.html' %}
+
+{% load static %}
 
 {% block title %}Post Detail{% endblock %}
 
 {% block content %}
-<h2>Post {{ post_id }}</h2>
-<p>This is the detail for post {{ post_id }}.</p>
+<h2>Post </h2>
+<p>Подробнее о посте </p>
+<img src="/static/img/product.jpg" alt="Example Image">
+<a href="https://www.ozon.ru/product/poster-poster-lionel-messi-lionel-messi-a3-bez-ramy-42-sm-h-30-sm-1730219485/">Ссылка на товар</a>
 {% endblock %}
+
